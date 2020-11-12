@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee List</title>
+        <link href="../css/index.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <style>
+            article {
+                background-color: #cccccc;
+            }
+
+            section {
+                color: red;
+            }
+
+            img {
+                width: 128px; 
+                height: 128px; 
+                display: inline-block; 
+                margin: 15px; 
+                border-right: 1px solid black; 
+                padding-right: 15px;
+            }
+        </style>
+
+        <article style="border: 1px solid black">
+            <section>
+                <div style="display: inline-block">
+                    <img alt="Image for Mayank" src="https://s3.amazonaws.com/uifaces/faces/twitter/alexandermayes/128.jpg" />
+                </div>
+                <div style="display: inline-block;">
+                    <label style="font-size: 12px;">Employee Name: Anshul</label><br/><br/>
+                    <label class="app_label_random" style="font-size: 12px;">Employee Id: 1</label><br/><br/>
+                    <label style="font-size: 12px;">Employee Designation: Developer</label><br/><br/>
+                    <label style="font-size: 12px;">Employee Address: Delhi</label><br/><br/>
+                </div>
+            </section><hr/>
+            <section>
+                <div style="display: inline-block">
+                    <img alt="Image for Mayank" src="https://s3.amazonaws.com/uifaces/faces/twitter/alexandermayes/128.jpg" />
+                </div>
+                <div style="display: inline-block;">
+                    <label style="font-size: 12px;">Employee Name: Anshul</label><br/><br/>
+                    <label style="font-size: 12px;">Employee Id: 1</label><br/><br/>
+                    <label style="font-size: 12px;">Employee Designation: Developer</label><br/><br/>
+                    <label style="font-size: 12px;">Employee Address: Delhi</label><br/><br/>
+                </div>
+            </section>
+        </article>
+
+        <section style="border: 1px solid grey; padding: 10px; margin-top: 10px; text-align: center;">
+            <h3>Enter New User Details</h3>
+            <label for="username" class="app_label_1">Enter User Name:</label><br/>
+            <input type="text" id="user_name" name="username" /><br/><br/>
+
+            <label for="userid" class="app_label_1">Enter User Id:</label><br/>
+            <input type="number" id="user_id" name="userid" /><br/><br/>
+
+            <label for="useremail" class="app_label_2">Enter User Email:</label><br/>
+            <input type="email" id="user_email" name="useremail" /><br/><br/>
+
+            <label for="userrandom" class="app_label_random">Employee Random:</label><br/>
+            <input type="text" id="user_random" name="userrandom" /><br/><br/>
+
+            <input type="button" class="app_label_random" id="app_label" value="Submit" />
+        </section>
+
+    </body>
+</html>

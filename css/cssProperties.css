@@ -1,0 +1,41 @@
+input[type=button] {
+    float: right
+}
+
+.update_button {
+    color: green;
+} 
+
+
+#update_btn {
+    color: blue;
+}
+
+
+input {
+    color: black
+}
+
+input#update_btn {
+    color: pink;
+}
+
+input.update_button.other_class#update_btn.sample {
+    color: brown;
+}
+
+.update_button#update_btn {
+    color:orange;
+}
+
+div p {
+    color: blue;
+}
+
+article section p {
+    color: red;
+}
+
+.my_section label b, .my_section b, article section p {
+    border: 1px solid red;
+}

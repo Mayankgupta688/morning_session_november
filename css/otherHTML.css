@@ -1,0 +1,15 @@
+div > p {
+    color: red;
+}
+
+div + p {
+    padding: 15px;
+}
+
+div ~ p {
+    border: 1px solid green;
+}
+
+p:hover {
+    font-size: 200%;
+}

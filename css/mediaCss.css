@@ -1,0 +1,36 @@
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .card {
+        width: 24%;
+        color:green;
+    }
+
+    h1 {
+        font-size: 55px;
+        font-style: italic;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .card {
+        width: 32%;
+        color:blue;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .card {
+        width: 49%
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .card {
+        width: 99%
+    }
+}
+
+.card {
+    display: inline-block;
+}

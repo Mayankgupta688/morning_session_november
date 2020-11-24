@@ -9,16 +9,17 @@ var userList = [{
     age: 50
 }];
 
-debugger;
 
 var newArray = userList.map(function(employee, index, originalArray) {
+    originalArray[index].name = "akhdsf " + " Gupta"
     return {
         name: originalArray[index].name + " Gupta",
         age: employee.age + 1
     }
 })
 
-var newArray = userList.filter(function(employee) {
+var newArray = userList.filter(function(employee, index, originalArray) {
+    originalArray[index].name = "akhdsf " + " Gupta"
     return employee.age % 2 == 0;
 })
 

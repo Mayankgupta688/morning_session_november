@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to JavaScript Integration</title>
+    </head>
+
+    <body>
+        <div id="my_container" onmouseover="updateDefaultColor(event, 'red')" onmouseout="updateDefaultColor(event, 'black')">Hello World....</div><br/>
+        <input type="button" onmouseover="updateDefaultColor(event, 'red')" onmouseout="updateDefaultColor(event, 'black')" value="Click to Update Text" onclick="changeData()" /> <hr/>
+        <label>Enter Name: </label><input type="text" id="user_input" />
+        <input type="button" onclick="updateSalutation()" value="Update Salutation Message" /><br/><hr/>
+        
+        <h3 id="dynamic_text">Update Input to Change Value...</h3>
+        <input type="text" id="dynamic_input" onkeyup="updateHeaderData()"/>
+        <script src="./index.js"></script>
+    </body>
+</html>

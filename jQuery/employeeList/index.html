@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee List</title>
+        <link href="./index.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <b style="margin-right: 10px;">Filter Employees</b>
+        <input type="text" onkeyup="filterData(event)" /><hr/>
+
+        <div style="border: 1px solid grey; padding: 10px;">
+            <label style="width: 150px; display: inline-block;">Enter Name: </label><input type="text" id="userName"  /><br/><br/>
+            <label style="width: 150px; display: inline-block;">Enter Age: </label><input id="userAge" type="text" /><br/><br/>
+            <label style="width: 150px; display: inline-block;">Enter Designation: </label><input id="userDesignation" type="text" /><br/><br/>
+            <input type="button" value="Add Employee" id="addNewEmployee" />
+        </div>
+
+        <div id="container"></div><br/>
+
+        <input type="button" id="removeAllButton" value="Remove All" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./index.js"></script>
+        <script src="./indexjQuery.js"></script>
+    </body>
+</html>

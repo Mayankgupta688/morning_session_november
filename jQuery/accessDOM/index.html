@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working with jQuery</title>
+
+        <style>
+            .colorRed {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <div class="otherDiv"></div>
+        <div class="otherDiv"></div>
+
+        <div class="dynamicElement"><h4>This is a Dynamic Element.....</h4></div>
+
+        <label>Enter Color</label><input type="text" id="colorInput" /><br/><br/>
+
+        <input type="button" onclick="addClass()" value="Convert to Red...." />
+        <input type="button" onclick="removeClass()" value="Remove Container" />
+        <input type="button" onclick="applyColor()" value="Apply Color" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>

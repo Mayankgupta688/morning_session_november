@@ -1,0 +1,17 @@
+<div>
+    <h1>Random Number Generated is {{randomNumber}}</h1>
+    <h2>Hello {{ userName }}... Welcome to the Session....</h2>
+    <h3>Data from A Template File</h3>
+    <h4>Sum: 4 * 10 = {{ 4 * 10 }}</h4>
+    <h4>Current Time: {{currentTime}}</h4>
+    <b>Current Counter: {{counter}}</b><br/><br/>
+
+    <input type="button" bind-value="buttonName" /><br/><br/>
+    <input type="button" [value]="buttonNameOne" /><br/><br/>
+    <input type="button" value="{{buttonNameTwo}}" /><br/><br/>
+
+    <img style="height: 150px; width: 200px;" 
+         [src]="imageUrl"
+         bind-title="imageTitle"
+         alt="{{imageAlt}}" />
+</div>

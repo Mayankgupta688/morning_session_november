@@ -1,0 +1,13 @@
+h2 {
+    color: brown;
+}
+
+h3 {
+    color: grey;
+}
+
+div {
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 10px;
+}

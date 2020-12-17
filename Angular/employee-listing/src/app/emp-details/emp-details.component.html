@@ -1,0 +1,17 @@
+<div>
+    <h1>Current Time: {{currentTime}}</h1>
+    <div class="card" style="width: 18rem;">
+        <img src={{empDetails.avatar}} class="card-img-top" alt={{empDetails.name}}>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIdJs-5Tc337X2xldrsr-H0UZSrhJZM-BwA&usqp=CAU" class="card-img-top" [alt]="empDetails.name">
+        <img [src]="empDetails.avatar" class="card-img-top" bind-alt="empDetails.name">
+        <img bind-src="empDetails.avatar" class="card-img-top" [alt]="empDetails.name">
+        <div class="card-body">
+          <h5 class="card-title">{{empDetails.name}}</h5>
+          <p class="card-text">
+              <b>Employee Id: {{empDetails.id}}</b><br/>
+              <b>Employee Created On {{empDetails.createdAt}}</b>
+          </p>
+          <a href="#" class="btn btn-primary">Delete</a>
+        </div>
+    </div>
+</div>

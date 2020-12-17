@@ -1,0 +1,27 @@
+<div class="card_container">
+    <div class="card">
+        <img [src]="empDetails[0].avatar" class="card-img-top" [alt]="empDetails[0].name">
+        <div class="card-body">
+          <h5 class="card-title">{{empDetails[0].name}}</h5>
+          <p class="card-text">
+              <b>Employee Id: {{empDetails[0].id}}</b><br/>
+              <b>Employee Created On {{empDetails[0].createdAt}}</b>
+          </p>
+          <a href="#" class="btn btn-primary">Delete</a>
+          <a href="#" class="btn btn-primary">Update</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img [src]="empDetails[1].avatar" class="card-img-top" [alt]="empDetails[1].name">
+        <div class="card-body">
+          <h5 class="card-title">{{empDetails[1].name}}</h5>
+          <p class="card-text">
+              <b>Employee Id: {{empDetails[1].id}}</b><br/>
+              <b>Employee Created On {{empDetails[1].createdAt}}</b>
+          </p>
+          <a href="#" class="btn btn-primary">Delete</a>
+          <a href="#" class="btn btn-primary">Update</a>
+        </div>
+    </div>
+</div>

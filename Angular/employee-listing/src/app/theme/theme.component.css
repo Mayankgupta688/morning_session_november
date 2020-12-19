@@ -19,6 +19,7 @@ b {
     margin-right: 10px;
     width: 200px;
     margin-bottom: 5px;
+    margin: 10px;
 }
 
 .btn-primary {
@@ -29,4 +30,28 @@ b {
     font-size: 12px;
     margin-right: 5px;
     
+}
+
+.black-theme {
+    background-color: black;
+    color: white;
+}
+
+.red-theme {
+    background-color: red;
+    color: white;
+}
+
+.white-theme {
+    background-color: white;
+    color: black;
+}
+
+.grey-theme {
+    background-color: grey;
+    color: blue;
+}
+
+.theme_buttons {
+    margin: 10px;
 }

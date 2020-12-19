@@ -1,27 +1,16 @@
 <div class="card_container">
-    <div class="card">
-        <img [src]="empDetails[0].avatar" class="card-img-top" [alt]="empDetails[0].name">
+    <article class="card" *ngFor="let employee of empDetails; let indexCount = index">
+        <img [src]="employee.avatar" class="card-img-top" [alt]="employee.name">
         <div class="card-body">
-          <h5 class="card-title">{{empDetails[0].name}}</h5>
+          <h5 class="card-title">{{employee.name}}</h5>
           <p class="card-text">
-              <b>Employee Id: {{empDetails[0].id}}</b><br/>
-              <b>Employee Created On {{empDetails[0].createdAt}}</b>
+              <b>Employee Id: {{employee.id}}</b><br/>
+              <b>Employee Created On {{employee.createdAt}}</b><br/>
+              <b>Employee Index {{indexCount}}</b>
           </p>
-          <a href="#" class="btn btn-primary">Delete</a>
-          <a href="#" class="btn btn-primary">Update</a>
+          <input type="button" class="btn btn-primary" value="Delete {{employee.name}}" (click)="deleteEmployee(employee.id)" />
         </div>
-    </div>
+    </article><br/>
 
-    <div class="card">
-        <img [src]="empDetails[1].avatar" class="card-img-top" [alt]="empDetails[1].name">
-        <div class="card-body">
-          <h5 class="card-title">{{empDetails[1].name}}</h5>
-          <p class="card-text">
-              <b>Employee Id: {{empDetails[1].id}}</b><br/>
-              <b>Employee Created On {{empDetails[1].createdAt}}</b>
-          </p>
-          <a href="#" class="btn btn-primary">Delete</a>
-          <a href="#" class="btn btn-primary">Update</a>
-        </div>
-    </div>
+    <input type="button" class="btn btn-primary" value="Add New Employee" (click)="addNewEmployee()" />
 </div>

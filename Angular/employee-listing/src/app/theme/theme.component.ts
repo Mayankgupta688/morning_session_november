@@ -22,13 +22,16 @@ export class ThemeComponent implements OnInit {
   }
 
   updateTheme(color) {
-    debugger;
     this.theme = `${color}-theme`
   }
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  deleteEmployee(empId) {
+
   }
 
 }

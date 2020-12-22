@@ -1,0 +1,9 @@
+<h1>Employee List...</h1>
+
+<div class="card_container">
+    <article class="card" *ngFor="let employee of empList">
+        <app-emp-card-details [employeeInput]="employee"></app-emp-card-details>
+    </article><br/>
+</div>
+
+<h2>This is End of the List</h2>

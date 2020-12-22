@@ -1,0 +1,9 @@
+<img [src]="employeeInput.avatar" class="card-img-top" [alt]="employeeInput.name">
+<div class="card-body">
+    <h5 class="card-title">{{employeeInput.name}}</h5>
+    <p class="card-text">
+        <b>Employee Id: {{employeeInput.id}}</b><br/>
+        <b>Employee Created On {{employeeInput.createdAt}}</b><br/>
+    </p>
+    <input type="button" class="btn btn-primary" value="Delete {{employeeInput.name}}"/>
+</div>

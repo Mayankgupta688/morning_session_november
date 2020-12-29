@@ -7,7 +7,11 @@ import { ThemeComponent } from './theme/theme.component';
 import { UsePipesComponent } from './use-pipes/use-pipes.component';
 import ConvertDataPipe from "./pipes/convert-data.pipe";
 import { EmpListComponent } from './emp-list/emp-list.component';
-import { EmpCardDetailsComponent } from './emp-card-details/emp-card-details.component'; 
+import { EmpCardDetailsComponent } from './emp-card-details/emp-card-details.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component'; 
+import { FormsModule } from "@angular/forms";
+import { GetDataComponent } from './get-data/get-data.component';
+import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
     declarations: [
@@ -18,9 +22,15 @@ import { EmpCardDetailsComponent } from './emp-card-details/emp-card-details.com
         UsePipesComponent,
         ConvertDataPipe,
         EmpListComponent,
-        EmpCardDetailsComponent
+        EmpCardDetailsComponent,
+        TwoWayBindingComponent,
+        GetDataComponent
     ],
-    imports: [BrowserModule],
-    bootstrap: [EmpListComponent]
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpClientModule
+    ],
+    bootstrap: [GetDataComponent]
 })
 export class AppModule {}

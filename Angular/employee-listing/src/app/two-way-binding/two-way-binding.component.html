@@ -1,0 +1,15 @@
+<div>
+    <h1>User Name is: {{userName}}</h1>
+    Two Way Binding: <input type="text" [(ngModel)]="userName" placeholder="Enter Name..." /><br/><br/>
+    One Way Binding: <input type="text" [value]="userName" placeholder="Enter Name..." />
+</div><hr/>
+
+<div>
+    <h2>Without FormsModule</h2>
+    <input type="text" [value]="userName" (keyup)="updateData($event)" placeholder="Enter Name..." /><br/><br/>
+</div>
+
+<div>
+    <h2>Without FormsModule</h2>
+    <input type="text" [ngModel]="userName" (ngModelChange)="updateNameBeforeRender($event)" placeholder="Enter Name..." /><br/><br/>
+</div>

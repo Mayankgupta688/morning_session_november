@@ -1,8 +1,9 @@
 <h1>Employee List...</h1>
+<section>Filter Data: <input type="text" [ngModel]="filterText" (ngModelChange)="filterList($event)"/></section>
 
 <div class="card_container">
-    <article class="card" *ngFor="let employee of empList">
-        <app-emp-card-details [employeeInput]="employee"></app-emp-card-details>
+    <article class="card" *ngFor="let employee of filterListData">
+        <app-emp-card-details [employeeInput]="employee" (notifyToDelete)="deleteEmployee($event)"></app-emp-card-details>
     </article><br/>
 </div>
 

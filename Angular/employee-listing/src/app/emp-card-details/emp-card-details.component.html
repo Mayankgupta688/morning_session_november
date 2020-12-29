@@ -5,5 +5,5 @@
         <b>Employee Id: {{employeeInput.id}}</b><br/>
         <b>Employee Created On {{employeeInput.createdAt}}</b><br/>
     </p>
-    <input type="button" class="btn btn-primary" value="Delete {{employeeInput.name}}"/>
+    <input type="button" class="btn btn-primary" value="Delete {{employeeInput.name}}" (click)="deleteEmployeeWithId(employeeInput.id, employeeInput.name)">
 </div>

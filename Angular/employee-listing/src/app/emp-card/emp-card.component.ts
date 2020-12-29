@@ -8,7 +8,6 @@ import * as data from "../data/employees.json";
 })
 export class EmpCardComponent {
   empDetails: any = [];
-  debugger;
   constructor() {
     this.empDetails = data["default"].empList;
     
@@ -25,7 +24,6 @@ export class EmpCardComponent {
   }
 
   addNewEmployee() {
-    debugger;
     this.empDetails.push({
       name: "Fsdfds Gupta",
       avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIdJs-5Tc337X2xldrsr-H0UZSrhJZM-BwA&usqp=CAU",

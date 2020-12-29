@@ -35,6 +35,6 @@ b {
     font-size: 12px;
 }
 
-h1 {
+h1, section {
     margin-left: 20px;
 }

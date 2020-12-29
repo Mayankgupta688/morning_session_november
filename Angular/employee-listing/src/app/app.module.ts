@@ -7,7 +7,9 @@ import { ThemeComponent } from './theme/theme.component';
 import { UsePipesComponent } from './use-pipes/use-pipes.component';
 import ConvertDataPipe from "./pipes/convert-data.pipe";
 import { EmpListComponent } from './emp-list/emp-list.component';
-import { EmpCardDetailsComponent } from './emp-card-details/emp-card-details.component'; 
+import { EmpCardDetailsComponent } from './emp-card-details/emp-card-details.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component'; 
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -18,9 +20,13 @@ import { EmpCardDetailsComponent } from './emp-card-details/emp-card-details.com
         UsePipesComponent,
         ConvertDataPipe,
         EmpListComponent,
-        EmpCardDetailsComponent
+        EmpCardDetailsComponent,
+        TwoWayBindingComponent
     ],
-    imports: [BrowserModule],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
     bootstrap: [EmpListComponent]
 })
 export class AppModule {}

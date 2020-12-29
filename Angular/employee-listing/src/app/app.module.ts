@@ -10,6 +10,8 @@ import { EmpListComponent } from './emp-list/emp-list.component';
 import { EmpCardDetailsComponent } from './emp-card-details/emp-card-details.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component'; 
 import { FormsModule } from "@angular/forms";
+import { GetDataComponent } from './get-data/get-data.component';
+import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
     declarations: [
@@ -21,12 +23,14 @@ import { FormsModule } from "@angular/forms";
         ConvertDataPipe,
         EmpListComponent,
         EmpCardDetailsComponent,
-        TwoWayBindingComponent
+        TwoWayBindingComponent,
+        GetDataComponent
     ],
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
-    bootstrap: [EmpListComponent]
+    bootstrap: [GetDataComponent]
 })
 export class AppModule {}

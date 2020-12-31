@@ -5,10 +5,15 @@ import { Injectable } from "@angular/core";
     providedIn: "root"
 })
 export default class DataService {
+    employees: any = [];
     constructor(private _http: HttpClient) { }
 
     getData() {
-        return this._http.get("http://localhost:3000/empList");
+        if(this.employees.length == 0) {
+            return this._http.get("http://localhost:3000/empList");
+        } else {
+            return this.employees;
+        }
     }
 
     deleteData(empId) {

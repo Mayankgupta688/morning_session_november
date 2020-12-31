@@ -1,0 +1,13 @@
+<article class="card" *ngIf="showTemplate == true">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIdJs-5Tc337X2xldrsr-H0UZSrhJZM-BwA&usqp=CAU" 
+         class="card-img-top" alt="...">
+    
+    <div class="card-body">
+        <h5 class="card-title">{{empList[0].name}}</h5>
+        <div class="card-text"><h5>User Id: {{empList[0].id}}: </h5>Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+        
+    </div>
+</article><br/>
+
+<input *ngIf="showTemplate == false" type="button" (click)="getData()" class="btn btn-primary" value="Show Data" />
+<input *ngIf="showTemplate == true" type="button" (click)="hideArticle()" class="btn btn-primary" value="Hide Data" />

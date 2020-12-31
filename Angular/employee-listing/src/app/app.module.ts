@@ -11,7 +11,8 @@ import { EmpCardDetailsComponent } from './emp-card-details/emp-card-details.com
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component'; 
 import { FormsModule } from "@angular/forms";
 import { GetDataComponent } from './get-data/get-data.component';
-import { HttpClientModule } from "@angular/common/http"
+import { HttpClientModule } from "@angular/common/http";
+import { FirstEmployeeComponent } from './first-employee/first-employee.component'
 
 @NgModule({
     declarations: [
@@ -24,13 +25,14 @@ import { HttpClientModule } from "@angular/common/http"
         EmpListComponent,
         EmpCardDetailsComponent,
         TwoWayBindingComponent,
-        GetDataComponent
+        GetDataComponent,
+        FirstEmployeeComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         HttpClientModule
     ],
-    bootstrap: [GetDataComponent]
+    bootstrap: [GetDataComponent, FirstEmployeeComponent]
 })
 export class AppModule {}

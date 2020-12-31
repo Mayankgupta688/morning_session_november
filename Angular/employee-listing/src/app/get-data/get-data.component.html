@@ -5,16 +5,21 @@
     <input type="button" value="Add Employee" (click)="addEmployee()" /><hr/>
 </div>
 
-<article class="card" *ngFor="let employee of empList">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIdJs-5Tc337X2xldrsr-H0UZSrhJZM-BwA&usqp=CAU" class="card-img-top" alt="...">
-    
-    <div class="card-body">
-        <h5 class="card-title">{{employee.name}}</h5>
-        <div class="card-text"><h5>User Id: {{employee.id}}: </h5>Some quick example text to build on the card title and make up the bulk of the card's content.</div>
-        <input type="button" class="btn btn-primary" (click)="doNothing(employee.id)" value="Delete {{employee.name}}" />
-        <input type="button" class="btn btn-primary" (click)="updateEmployee(employee.id)" value="Update {{employee.name}}" />
-    </div>
-</article><br/>
+<div *ngIf="showList">
+    <article class="card" *ngFor="let employee of empList">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIdJs-5Tc337X2xldrsr-H0UZSrhJZM-BwA&usqp=CAU" class="card-img-top" alt="...">
+        
+        <div class="card-body">
+            <h5 class="card-title">{{employee.name}}</h5>
+            <div class="card-text"><h5>User Id: {{employee.id}}: </h5>Some quick example text to build on the card title and make up the bulk of the card's content.</div>
+            <input type="button" class="btn btn-primary" (click)="doNothing(employee.id)" value="Delete {{employee.name}}" />
+            <input type="button" class="btn btn-primary" (click)="updateEmployee(employee.id)" value="Update {{employee.name}}" />
+        </div>
+    </article>
+</div><br/>
+
+
+<input type="button" class="btn btn-primary" value="Get Employee List" (click)="getEmployeeList()" />
 
 <div *ngIf="errorMessage">
     <h1>{{errorMessage}}</h1>

@@ -5,25 +5,32 @@ import DataService from "../services/data.service";
 @Component({
   selector: 'app-get-data',
   templateUrl: './get-data.component.html',
-  styleUrls: ['./get-data.component.css']
+  styleUrls: ['../styles/card-style.css']
 })
 export class GetDataComponent {
   empList: any = [];
   errorMessage = "";
+  showList = false;
   user = {
     userName: "",
     userId: "",
     userAvatar: "",
     createdAt: "" 
   };
-  constructor(private _dataService: DataService) { 
-    debugger;
-    this._dataService.getData().subscribe((data: any) => {
-      debugger;
-      this.empList = data
-    }, (err) => {
-      this.errorMessage = err.message;
-    })
+  constructor(private _http: HttpClient, private _dataService: DataService) { }
+
+  getEmployeeList() {
+    var returnData: any = this._dataService.getData();
+    if(returnData.operator) {
+      returnData.subscribe((list: any[]) => {
+       this.empList = list;
+       this._dataService.employees = list;
+      })
+    } else {
+      this.empList = this._dataService.employees;
+    }
+
+    this.showList = true;
   }
 
   doNothing(empId) {

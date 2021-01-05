@@ -1,0 +1,32 @@
+<h1>This is the TechnoFunnel Page... </h1>
+<h2>Welcome to the Application....</h2>
+<b>Using Href</b>
+<nav>
+    <a style="margin-right: 20px;" href="/home">List Employee</a>
+    <a style="margin-right: 20px;" href="/modifyemployee">Modify Employee</a>
+    <a style="margin-right: 20px;" href="/addemployee">Add Employee</a>
+</nav><br/><br/>
+
+<b>Using Router Link</b>
+<nav>
+    <a style="margin-right: 20px;" [routerLink]="['home']">List Employee</a>
+    <a style="margin-right: 20px;" [routerLink]="['modifyemployee']">Modify Employee</a>
+    <a style="margin-right: 20px;" [routerLink]="['addemployee']">Add Employee</a>
+    <a style="margin-right: 20px;" [routerLink]="['random']">Random Employee</a>
+    <a style="margin-right: 20px;" [routerLink]="['employee', '1']">Employee One</a>
+    <a style="margin-right: 20px;" [routerLink]="['employee', '2']">Employee Two</a>
+    <a style="margin-right: 20px;" [routerLink]="['employee', '100']">Employee Hundred</a>
+</nav>
+
+<div id="root">
+    <router-outlet></router-outlet>
+</div>
+
+
+<b>Routing Buttons</b><br/><br/>
+<input type="button" value="Go to Add Employee Page" (click)="redirectToAddEmployee()" /><br/><br/>
+<input type="button" value="Go to Modify Employee Page" (click)="redirectToModifyEmployee()" /><br/><br/>
+<input type="button" value="Go to Modify Employee Page" (click)="redirectToSamplePage()" /><br/><br/>
+<input type="button" value="Employee Details for 100" (click)="redirectToEmployee(100)" />
+
+<h3>This is Footer...</h3>

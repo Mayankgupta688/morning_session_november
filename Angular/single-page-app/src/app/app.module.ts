@@ -8,10 +8,14 @@ import { ModifyEmployeeComponent } from "./components/modify-employee/modify-emp
 import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
 import { EmployeeComponent } from './components/employee/employee.component';
 
+import { HttpClientModule } from "@angular/common/http"
+import { FormsModule } from '@angular/forms';
+
 var _routes: Routes = [
   { path: "home", component: EmpListingComponent },
   { path: "addemployee", component: AddEmployeeComponent },
-  { path: "modifyemployee", component: ModifyEmployeeComponent },
+  { path: "modifyemployee/:id", component: ModifyEmployeeComponent },
+  { path: "employeedetails/:userIdData", component: EmployeeComponent },
   { path: "employee/:userIdData", component: EmployeeComponent },
   { path: "", redirectTo: "home", pathMatch: "full"},
   { path: "**", component: PageNotFoundComponent}
@@ -28,6 +32,8 @@ var _routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(_routes)
   ],
   bootstrap: [ HomePageComponent ]

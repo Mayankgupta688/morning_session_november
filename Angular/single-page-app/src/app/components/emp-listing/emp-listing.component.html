@@ -1,1 +1,5 @@
-<p>emp-listing works!</p>
+<div *ngFor="let employee of empList">
+    <b>Employee Name: {{employee.name}}</b><br/><br/>
+    <input type="button" value="Modify Details" (click)="modifyDetails(employee.id)" />
+    <input type="button" value="Show Details" (click)="showDetails(employee.id)" /><hr/>
+</div>

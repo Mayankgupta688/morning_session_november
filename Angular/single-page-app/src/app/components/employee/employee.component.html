@@ -1,1 +1,6 @@
-<p>Data for Employee with the Id: {{_route.snapshot.params.userIdData}}</p>
+<b>Data for Employee with the Id: {{_route.snapshot.params.userIdData}}</b><br/><br/>
+<img alt="Image for {{empDetails.name}}" src="{{empDetails.avatar}}" /><br/><br/>
+<b>Employee Name: {{empDetails.name}}</b><br/><br/>
+<b>Employee CreatedAt: {{empDetails.createdAt}}</b><br/><br/>
+<input type="button" (click)="goBackFunction()" value="Go Back" />
+

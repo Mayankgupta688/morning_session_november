@@ -1,1 +1,8 @@
-<p>add-employee works!</p>
+<h1>Add New Employee To the Database</h1>
+
+Enter New Employee Id<input type="text" [(ngModel)]="employeeDetails.id" /><br/><br/>
+Enter New Employee Name<input type="text" [(ngModel)]="employeeDetails.name" /><br/><br/>
+Enter New Employee avatar<input type="text" [(ngModel)]="employeeDetails.avatar" /><br/><br/>
+Enter New Employee created At<input type="text" [(ngModel)]="employeeDetails.createdAt" /><br/><br/>
+
+<input type="button" value="Add Employee" (click)="addEmployee()" />

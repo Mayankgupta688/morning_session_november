@@ -1,1 +1,7 @@
-<p>modify-employee works!</p>
+<h1>Update Data for Employee with Id: {{employee.id}}</h1>
+
+Update User Name<input type="text" [(ngModel)]="employee.name" /><br/><br/>
+Update User Avatar<input type="text" [(ngModel)]="employee.avatar" /><br/><br/>
+Update User CreatedAt <input type="text" [(ngModel)]="employee.createdAt" /><br/><br/>
+<input type="button" value="Save" (click)="updateEmployeeData()" />
+    
